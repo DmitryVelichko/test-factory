@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --tcx-h1-64-semibold: Gilroy;
+
+  /* font sizes */
+  --tcx-h1-64-semibold-size: 3.5rem;
+  --tcx-h-size: 6.5rem;
+  --tcx-h3-44-semibold-size: 2.25rem;
+  --tcx-h5-32-semibold-size: 1.5rem;
+
+  /* Colors */
+  --grey-grey-70: #34343e;
+  --green-5-ka-5-brand-green: #00923a;
+  --grey-grey-30: #a0a0a0;
+  --white: #fff;
+
+  /* Gaps */
+  --gap-5xs: 0.5rem;
+
+  /* Paddings */
+  --padding-base: 1rem;
+
+  /* border radiuses */
+  --br-base: 16px;
+  --br-10xs: 3px;
+  --br-61xl: 80px;
+
+  /* Effects */
+  --small-buttons-cards: 0px 0px 2px rgba(52, 52, 62, 0.4),
+    0px 2px 20px rgba(52, 52, 62, 0.16);
+}

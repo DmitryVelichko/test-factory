@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Gilroy:wght@600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="background">
+        <div class="background-child"></div>
+      </div>
+      <div class="buttonm">
+        <div class="icontext">
+          <img class="man-icon" alt="" src="./public/32-man.svg" />
+
+          <div class="text">Вызов сотрудника</div>
+        </div>
+      </div>
+      <div class="buttonm1">
+        <div class="icontext1">
+          <div class="man-icon">
+            <div class="rectangle-parent">
+              <div class="group-child"></div>
+              <img
+                class="group-item"
+                alt=""
+                src="./public/rectangle-1981.svg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div1"><span id="xxx"></span>&nbsp;Касса #1</div>
+      <div class="arr">
+        <img class="arrow-icon" alt="" src="./public/arrow.svg" />
+      </div>
+      <div class="subtotal">
+        <img class="check-icon" alt="" src="./public/subtotal.svg" />
+      </div>
+    </div>
+    <script>
+      function displayFormattedDateTime() {
+        function formatTime(value) {
+          return value < 10 ? '0' + value : value;
+        }
+
+        let currentDate = new Date();
+        let day = formatTime(currentDate.getDate());
+        let month = formatTime(currentDate.getMonth() + 1); // Месяцы в JavaScript начинаются с 0
+        let year = currentDate.getFullYear();
+        let hours = formatTime(currentDate.getHours());
+        let minutes = formatTime(currentDate.getMinutes());
+
+        let formattedDateTime =
+          day + '.' + month + '.' + year + ' ' + hours + ':' + minutes;
+        return formattedDateTime;
+      }
+
+      let date = displayFormattedDateTime();
+      document.getElementById('xxx').innerHTML = date;
+    </script>
+  </body>
+</html>
