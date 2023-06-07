@@ -213,3 +213,61 @@
   align-items: flex-end;
   justify-content: flex-start;
 }
+.final-price1 {
+  width: 20.88rem;
+  height: 7rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: var(--gap-5xs);
+  color: var(--grey-grey-70);
+}
+.final-price-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.25rem;
+  text-align: right;
+  font-size: var(--tcx-h-size);
+}
+.textprice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.p {
+  margin: 0;
+}
+.div3 {
+  position: relative;
+  font-size: var(--tcx-h1-64-semibold-size);
+  line-height: 4rem;
+  font-weight: 600;
+  color: var(--green-5-ka-5-brand-green);
+}
+.textpricebutton {
+  position: absolute;
+  height: 39.64%;
+  width: 54.62%;
+  top: 11.26%;
+  right: 22.69%;
+  bottom: 49.1%;
+  left: 22.69%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.75rem;
+}
+.subtotal {
+  position: absolute;
+  top: 20.88rem;
+  width: 66.94rem;
+  height: 55.5rem;
+  text-align: center;
+  font-size: var(--tcx-h3-44-semibold-size);
+}
